@@ -1,0 +1,49 @@
+{
+	"name": "@suomikulta/eslint-config",
+	"version": "1.0.0",
+	"description": "eslint config",
+	"keywords": [
+		"eslint",
+		"config",
+		"eslint-config",
+		"lint"
+	],
+	"author": "Suomi Kulta <dev@suomikulta.fi>",
+	"repository": "github:devsuomikulta/eslint-config",
+	"license": "MIT",
+	"scripts": {
+		"format": "prettier --write"
+	},
+	"peerDependencies": {
+		"eslint": "^5.6.0",
+		"eslint-plugin-import": "^2.0.0",
+		"eslint-plugin-jsdoc": "^22.0.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-node": "^11.1.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.1.1",
+		"lint-staged": "^11.1.1"
+	},
+	"files": [
+		"rules/",
+		"settings/",
+		"utils/",
+		"base.js",
+		"base-typescript.js",
+		"react.js",
+		"react-typescript.js",
+		"nodejs.js"
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,json,md,yml}": [
+			"yarn format",
+			"git add"
+		]
+	}
+}
