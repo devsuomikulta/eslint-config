@@ -1,6 +1,7 @@
 {
 	"name": "@suomikulta/eslint-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
+	"private": false,
 	"description": "eslint config",
 	"keywords": [
 		"eslint",
@@ -14,16 +15,8 @@
 	"scripts": {
 		"format": "prettier --write"
 	},
-	"peerDependencies": {
-		"eslint": "^5.6.0",
-		"eslint-plugin-import": "^2.0.0",
-		"eslint-plugin-jsdoc": "^22.0.0",
-		"eslint-plugin-jsx-a11y": "^6.2.3",
-		"eslint-plugin-node": "^11.1.0"
-	},
-	"devDependencies": {
-		"prettier": "^2.1.1",
-		"lint-staged": "^11.1.1"
+	"publishConfig": {
+		"access": "public"
 	},
 	"files": [
 		"rules/",
@@ -45,5 +38,25 @@
 			"yarn format",
 			"git add"
 		]
+	},
+	"peerDependencies": {
+		"eslint": "^8.2.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-jsdoc": "^37.0.3",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-react": "^7.27.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"eslint-plugin-unicorn": "^38.0.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.2.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-jsdoc": "^37.0.3",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-react": "^7.27.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"eslint-plugin-unicorn": "^38.0.1"
 	}
 }
