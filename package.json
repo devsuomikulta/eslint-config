@@ -1,6 +1,6 @@
 {
 	"name": "@suomikulta/eslint-config",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"private": false,
 	"description": "eslint config",
 	"keywords": [
@@ -41,6 +41,8 @@
 	},
 	"peerDependencies": {
 		"eslint": "^8.2.0",
+		"@typescript-eslint/eslint-plugin": "^5.3.1",
+		"eslint-config-airbnb": "^19.0.0",
 		"eslint-plugin-import": "^2.25.3",
 		"eslint-plugin-jsdoc": "^37.0.3",
 		"eslint-plugin-jsx-a11y": "^6.5.1",
@@ -50,7 +52,9 @@
 		"eslint-plugin-unicorn": "^38.0.1"
 	},
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.3.1",
 		"eslint": "^8.2.0",
+		"eslint-config-airbnb": "^19.0.0",
 		"eslint-plugin-import": "^2.25.3",
 		"eslint-plugin-jsdoc": "^37.0.3",
 		"eslint-plugin-jsx-a11y": "^6.5.1",
